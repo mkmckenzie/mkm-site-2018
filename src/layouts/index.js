@@ -2,16 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
-import './index.css'
+import Header from '../components/header'
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Mary-Katherine McKenzie"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'A portfolio and resume site for Rails developer Mary Katheirne McKenzie', content: 'Resume' },
+        { name: 'resume, web developer, web dev, rails dev, ruby dev, ruby, rails, dev for hire, software engineer', content: 'resume, portfolio' },
       ]}
     />
     <Header />

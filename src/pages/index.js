@@ -1,12 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Summary from '../components/Summary'
+import Skill from '../components/Skill'
+import WorkHistory from '../components/WorkHistory'
+import VolunteerHistory from '../components/VolunteerHistory'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Summary />
+    <Skill
+    	skillName="Rails"
+    	skillDescription="Since 2015" 
+  	/>
+  	<WorkHistory />
+  	<VolunteerHistory />
   </div>
 )
 
