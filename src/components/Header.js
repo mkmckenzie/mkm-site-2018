@@ -9,7 +9,7 @@ class Header extends React.Component {
   _renderFloatingThings(number) {
     let placeholder = [];
     for (let i = 0; i < number; i++) {
-       placeholder.push(<FloatingHexagon />)
+       placeholder.push(<FloatingHexagon key={i} uniqId={i}/>)
     };
     return placeholder;
   };
@@ -21,7 +21,7 @@ class Header extends React.Component {
       height: '100%', 
       width: '100%', 
       display:'flex', 
-      alignItems: 'center', 
+      alignItems: 'flex-end', 
       overflow: 'hidden', 
     }
 
