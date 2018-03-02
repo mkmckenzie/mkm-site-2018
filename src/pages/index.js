@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Summary from '../components/Summary'
-import Skill from '../components/Skill'
+import Skills from '../components/Skills'
 import WorkHistory from '../components/WorkHistory'
 import VolunteerHistory from '../components/VolunteerHistory'
+import SocialLinks from '../components/SocialLinks'
 import FloatingHexagon from '../components/FloatingHexagon'
 
 const floatingThingsContainerStyle = { 
@@ -29,13 +30,11 @@ function _renderFloatingThings(number) {
 const IndexPage = () => (
   <div>
   	<div style={floatingThingsContainerStyle}>{_renderFloatingThings(1000)}</div>
-    <Summary />
-    <Skill
-    	skillName="Rails"
-    	skillDescription="Since 2015" 
-  	/>
+    <Summary  />
+    <Skills />
   	<WorkHistory />
   	<VolunteerHistory />
+  	<SocialLinks />
   </div>
 )
 
