@@ -20,12 +20,12 @@ class FloatingHexagon extends React.Component {
 		const idName =  'animatedHex' + this.props.uniqId
 		const animationName = 'float-' + idName
 		const styleSheet = document.styleSheets[0]
-		const animationStyle = ['linear', 'ease-in', 'ease-out'][this._getRandomInt(0,3)]
+		const animationStyle = ['linear','ease-in', 'ease-out'][this._getRandomInt(0,2)]
 
 		const animation = {
 			position: 'relative',
-  		margin: '-' + this._getRandomInt(0,80) + 'px',
-  		opacity: this._getRandomInt(1,60)/100,
+  		margin: this._getRandomInt(-80,80) + 'px',
+  		opacity: this._getRandomInt(30,60)/100,
   		animationName: animationName,
   		animationDuration: this._getRandomInt(4,20) + 's',
 		  animationTimingunction: animationStyle,
@@ -37,9 +37,12 @@ class FloatingHexagon extends React.Component {
 		const keyframes = `@keyframes ${animationName} { 
 			0% {
 				bottom: -1000px;
+				right: ${this._getRandomInt(-100,100)}px;
+
 			}
 			100% {
-				bottom: ${this._getRandomInt(500,1100)}px;
+				bottom: ${this._getRandomInt(500,700)}px;
+				right: 0px;
 			} 
 		}`;
 

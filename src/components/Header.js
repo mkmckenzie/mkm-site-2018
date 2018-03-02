@@ -2,58 +2,46 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Hexagon from './hexagon'
 import { rhythm } from '../utils/typography'
-import FloatingHexagon from './FloatingHexagon'
+
 
 class Header extends React.Component {
 
-  _renderFloatingThings(number) {
-    let placeholder = [];
-    for (let i = 0; i < number; i++) {
-       placeholder.push(<FloatingHexagon key={i} uniqId={i}/>)
-    };
-    return placeholder;
-  };
-
   render() {
 
-    const outerContainerStyle = { height: '500px', }
-    const floatingThingsContainerStyle = { 
-      height: '100%', 
-      width: '100%', 
-      display:'flex', 
-      alignItems: 'flex-end', 
-      overflow: 'hidden', 
+    const outerContainerStyle = { 
+      height: '500px',
+      display: 'flex',
+      flexWrap: 'wrap', 
+      justifyContent: 'center',
     }
 
+    // const 
+
     return (
-      <div style={outerContainerStyle}>
-        <div style={floatingThingsContainerStyle}>
-          {this._renderFloatingThings(100)}
-        </div>
-        <div>
+      <div>
+        <div style={outerContainerStyle}>
           <div>
               <Hexagon
-              sizeMultiplier='.7'
-              backgroundColor='cornflowerblue'
+              sizeMultiplier='1'
+              backgroundColor='#6B322E'
              />
            </div>
-         </div>
-         <div style={{
-            background: 'black',
-            marginTop: rhythm(1),
-            marginBottom: rhythm(1),
-            color: 'white',
-            padding: rhythm(1),
-            textAlign: 'center',
-            textTransform: 'uppercase',
-          }}>
-          <h1
-            style={{
-              margin: 0,
-            }}
-          >
-            Mary-Katherine McKenzie
-          </h1>
+           <div style={{
+              background: '#6B322E',
+              marginTop: rhythm(1),
+              marginBottom: rhythm(1),
+              color: 'white',
+              padding: rhythm(1),
+              textTransform: 'uppercase',
+              width: '100%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+            <h1 style={{textAlign: 'center'}}>
+              Mary-Katherine McKenzie
+            </h1>
+          </div>
         </div>
       </div>
       )

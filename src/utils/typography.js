@@ -1,7 +1,7 @@
 import Typography from "typography";
 
 const typography = new Typography({ 
-	baseFontSize: '14px',
+	baseFontSize: '18px',
 	googleFonts: [
 		{
 			name: 'Lato',
@@ -23,12 +23,18 @@ const typography = new Typography({
 	bodyWeight: 300,
 	boldWeight: 700,
 	includeNormalize: true,
-	scaleRatio: 1.375,
-	overrideStyle: () => ({
+	scaleRatio: 2,
+	overrideStyles: () => ({
+		body: {
+			backgroundImage: 'linear-gradient(#fff, #F4EAD4)'
+		},
 		h1: {
 			textTransform: 'uppercase',
-		}
-	})
+			margin: '0',
+			fontSize: '2rem',
+			letterSpacing: '.2rem',
+		},
+	}),
  });
 
 export default typography;
