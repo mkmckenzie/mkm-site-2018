@@ -35,7 +35,6 @@ class SocialLinks extends React.Component {
 				</div>
 			);
 		});
-
 	}
 
 	render() {

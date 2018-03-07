@@ -37,7 +37,7 @@ class FloatingHexagon extends React.Component {
 		const keyframes = `@keyframes ${animationName} { 
 			0% {
 				bottom: -1000px;
-				right: ${this._getRandomInt(-100,100)}px;
+				right: ${this._getRandomInt(-500,500)}px;
 
 			}
 			100% {

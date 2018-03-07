@@ -47,10 +47,14 @@ class Skills extends React.Component {
 
 	render(){
 		const skillSet = this._getSkills();
+		const skillStyle = {
+			display: 'grid',
+			gridTemplateColumns: '33% 33% 33%',
+		}
 		return(
 			<div>
 				<h2>Skills</h2>
-				<div>{skillSet}</div>
+				<div style={skillStyle}>{skillSet}</div>
 			</div>
 			)
 	}
