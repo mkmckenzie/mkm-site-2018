@@ -1,5 +1,6 @@
 import React from 'react';
 import Hexagon from './hexagon'
+import COLOR_ARRAY from '../utils/constants'
 
 class FloatingHexagon extends React.Component {
 
@@ -8,15 +9,14 @@ class FloatingHexagon extends React.Component {
 	};
 
 	_getRandomColor() {
-		const colors = ['#6B322E','#FFDAC6','#636357', '#8E8B79', '#F4EAD4'];
+		const colors = Object.values(COLOR_ARRAY);
 		return colors[this._getRandomInt(0, colors.length)];
 	};
 
-	//  to view palette: https://coolors.co/6b322e-ffdac6-636357-8e8b79-f4ead4
 
 	render(){
-		const randomNumber = this._getRandomInt(10,50)/100;
-		const randomColor = this._getRandomColor();
+		const randomNumber = this._getRandomInt(10,50)/100
+		const randomColor = this._getRandomColor()
 		const idName =  'animatedHex' + this.props.uniqId
 		const animationName = 'float-' + idName
 		const styleSheet = document.styleSheets[0]
@@ -24,10 +24,10 @@ class FloatingHexagon extends React.Component {
 
 		const animation = {
 			position: 'relative',
-  		margin: this._getRandomInt(-80,80) + 'px',
-  		opacity: this._getRandomInt(30,60)/100,
-  		animationName: animationName,
-  		animationDuration: this._getRandomInt(4,20) + 's',
+			margin: this._getRandomInt(-80,80) + 'px',
+			opacity: this._getRandomInt(30,60)/100,
+			animationName: animationName,
+			animationDuration: this._getRandomInt(4,20) + 's',
 		  animationTimingunction: animationStyle,
 		  animationDelay: '0',
 		  animationIterationCount: 'infinite',
@@ -45,7 +45,6 @@ class FloatingHexagon extends React.Component {
 				right: 0px;
 			} 
 		}`;
-
 		styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
 
 		return(
@@ -58,5 +57,7 @@ class FloatingHexagon extends React.Component {
 			)
 		}
 	}
+
+
 
 export default FloatingHexagon;

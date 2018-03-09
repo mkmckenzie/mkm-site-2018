@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class JobDescription extends React.Component {
 	render() {
@@ -9,7 +9,7 @@ class JobDescription extends React.Component {
 		}
 		return(
 			<div className="job" style={style}>
-				<h4>{this.props.title}, {this.props.company}, {this.props.dates}</h4>
+				<h4><em>{this.props.title}, {this.props.company}, {this.props.dates}</em></h4>
 				<ul>{this.props.description}</ul>
 			</div>
 			)

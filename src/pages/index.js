@@ -26,15 +26,19 @@ function _renderFloatingThings(number) {
   return placeholder;
 };
 
+const containerStyle = {
+  marginTop: '80px',
+}
+
 
 const IndexPage = () => (
   <div>
   	<div style={floatingThingsContainerStyle}>{_renderFloatingThings(1000)}</div>
-    <Summary  />
-    <Skills />
-  	<WorkHistory />
-  	<VolunteerHistory />
-  	<SocialLinks />
+    <div style={containerStyle}><Summary  /></div>
+    <div style={containerStyle}><Skills /></div>
+  	<div style={containerStyle}><WorkHistory /></div>
+  	<div style={containerStyle}><VolunteerHistory /></div>
+  	<div style={containerStyle}><SocialLinks /></div>
   </div>
 )
 
