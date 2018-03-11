@@ -15,6 +15,7 @@ class Skills extends React.Component {
 					<li>Learned primarily through self-directed online tutorials & mentorship</li>
 				</ul>,
 				flex: '1',
+				key: 1, 
 			},
 			{
 				skillName: 'Ruby',
@@ -26,6 +27,7 @@ class Skills extends React.Component {
 					<li>Attended <a href="http://rubyforgood.org/">Ruby for Good</a> 2016 & 2017</li>
 				</ul>,
 				flex: '1',
+				key: 2,
 			},
 			{
 				skillName:'React',
@@ -37,11 +39,13 @@ class Skills extends React.Component {
 					<li>This site is built with <a href="https://www.gatsbyjs.org/">Gatsby</a>, a static site generator for React</li>
 				</ul>,
 				flex: '1',
+				key: 3,
 			},
 			{
 				skillName:'Other Skills',
 				skillDescription: <div style={{ textAlign: 'center' }}> HTML5/CSS3, Coffeescript, Sass, Elasticsearch, MySQL, Adobe Illustrator, Generally Being a Good Person </div>,
 				flex: '100%',
+				key: 4,
 			},
 		];
 
@@ -51,6 +55,7 @@ class Skills extends React.Component {
 					skillName={skill.skillName}
 					skillDescription={skill.skillDescription}
 					flex={skill.flex}
+					key={skill.key}
 				/>
 			);
 		});

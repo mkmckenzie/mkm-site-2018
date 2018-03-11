@@ -27,7 +27,7 @@ class Skill extends React.Component {
 			<div style={cardStyle}>
 				<div style={innerCardStyle}>
 					<h4 style={titleStyle}>{this.props.skillName}</h4>
-					<p style={{ fontSize: '14px', }}>{this.props.skillDescription}</p>
+					<div style={{ fontSize: '14px', }}>{this.props.skillDescription}</div>
 				</div>
 			</div>
 		)

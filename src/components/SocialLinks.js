@@ -7,7 +7,7 @@ class SocialLinks extends React.Component {
 
 	constructor() {
 		super()
-		this.state = { colorArray: Object.values(COLOR_ARRAY)}
+		this.state = { colorArray: Object.values(COLOR_ARRAY) }
 	};
 
 	_getAllLinks() {
@@ -21,70 +21,65 @@ class SocialLinks extends React.Component {
 				title: 'Blog',
 				href: 'https://emkaydeum.wordpress.com/',
 				description: 'A collection of my thoughts, tutorials, and walk-throughs.',
-				color: this.state.colorArray[0]
+				color: this.state.colorArray[0],
+				key: 1,
 			},
 			{
 				title: 'Twitter',
 				href: 'https://twitter.com/MaryKMcKenzie',
 				description: 'I tweet things regularly, with wild (albiet polite) abandon.',
-				color: this.state.colorArray[1]
+				color: this.state.colorArray[1],
+				key: 2, 
 			},
 			{
 				title: 'GitHub',
 				href: 'https://github.com/mkmckenzie',
 				description: 'Because I am a developer and this is a developer thing.',
-				color: this.state.colorArray[2]
+				color: this.state.colorArray[2],
+				key: 3,
 			},
 			{
 				title: 'LinkedIn',
 				href: 'https://www.linkedin.com/in/marykatherinemckenzie/',
 				description: 'In case you want the FULL history.',
-				color: this.state.colorArray[3]
+				color: this.state.colorArray[3],
+				key: 4, 
 			},
+			{
+				title: 'Email',
+				href: 'mailto:marykatherinemckenzie@gmail.com',
+				description: 'send me some mail!',
+				color: this.state.colorArray[4],
+				key: 5,
+
+			}
 		];
 
 		return links.map((link) => {
-			const hexStyle = {
-				opacity: '0.6',
-				display: 'inline-block',
-				overflow: 'hidden',
-			}
+			const titleStyle = {
+				padding: '10px',
+				background: `linear-gradient(217deg, ${COLOR_ARRAY.middle}, ${COLOR_ARRAY.darker})`,
 
-			const tileStyle = {
-				width: '400px',
-				padding: '25px',
-				marginTop: '10px',
-				marginBottom: '10px',
-				borderWidth: '10px',
-				borderImageSource: 'linear-gradient(217deg, ' + COLOR_ARRAY.lighest + ', ' + COLOR_ARRAY.darkest +')',
-				borderStyle: 'solid',
-			}
+				}
 
-			const titleHexStyle = {
-				display: 'flex',
-				alignContent: 'center',
+			const linkStyle = {
+				color: 'white',
+				backgroundColor: 'black',
 			}
-
 			return (
-				<div style={tileStyle}>
-					<div style={titleHexStyle}>
-						<div style={hexStyle}>
-							<Hexagon 
-								sizeMultiplier='0.13'
-								backgroundColor={link.color}
-								/>
-						</div>
-						<div>
-							<a href={link.href}><strong>{link.title}</strong></a>
-						</div>
-					</div>
-					<p>{link.description}</p>
+				<div className='social-link' key={link.key}>
+					<a href={link.href} style={linkStyle}><h4 style={titleStyle}>{link.title}</h4></a>
 				</div>
 			);
 		});
 	}
 
 	render() {
+		const hoverLink = `.social-link h4:hover {
+			background: black;
+		}`
+		const styleSheet = document.styleSheets[0]
+		styleSheet.insertRule(hoverLink, styleSheet.cssRules.length);
 		const socialLinks = this._getAllLinks();
 		const socialLinksStyle = {
 			display: 'flex',

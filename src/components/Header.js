@@ -10,24 +10,27 @@ class Header extends React.Component {
   render() {
     const MainDarkColor = COLOR_ARRAY.darkest;
     const outerContainerStyle = { 
-      height: '500px',
+      padding: '50px',
       display: 'flex',
       flexWrap: 'wrap', 
       justifyContent: 'center',
     }
 
     const titleBackgroundStyle = {
+      position: '-webkit-sticky',
+      position: 'sticky',
+      top: '10px',
       background: `linear-gradient(217deg, ${COLOR_ARRAY.middle}, ${COLOR_ARRAY.darker})`,
-      marginTop: rhythm(1),
-      marginBottom: rhythm(1),
+      margin: '0',
       color: 'white',
-      padding: rhythm(0.3),
+      padding: '10px',
       textTransform: 'uppercase',
-      width: '85%',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       textAlign: 'center',
+      width: '100%',
+     
     }
 
     return (
@@ -39,9 +42,9 @@ class Header extends React.Component {
               backgroundColor={MainDarkColor}
             />
           </div>
-          <div style={titleBackgroundStyle}>
-            <h1>Mary-Katherine McKenzie</h1>
-          </div>
+        </div>
+        <div style={titleBackgroundStyle}>
+          <h1>Mary-Katherine McKenzie</h1>
         </div>
       </div>
     )
