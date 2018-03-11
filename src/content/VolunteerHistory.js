@@ -1,11 +1,6 @@
 import React from 'react'
-import JobDescription from './JobDescription'
 
-
-class VolunteerHistory extends React.Component {
-
-	_getGroups() {
-			const myGroups = [
+const VolunteerHistoryContent = [
 			{
 				title: 'DC Community Developer',
 				company: 'CodeNewbie DC',
@@ -31,29 +26,5 @@ class VolunteerHistory extends React.Component {
 			}
 		];
 
-		return myGroups.map((group) => {
-			return (
-				<JobDescription
-					title={group.title}
-					company={group.company}
-					dates={group.dates}
-					description={group.description}
-					key={group.order}
-					order={group.order}
-				/>
-				);
-		});
-	};
 
-	render() {
-		const groups = this._getGroups();
-		return (
-			<div className="volunteerHistory">
-				<h2>Community Leadership</h2>
-				<div className="groups" style={{display:'flex', flexWrap: 'wrap'}}>{groups}</div>
-			</div>
-		)
-	}
-}
-
-export default VolunteerHistory
+export default VolunteerHistoryContent

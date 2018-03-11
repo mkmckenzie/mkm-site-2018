@@ -76,7 +76,7 @@ class SocialLinks extends React.Component {
 
 	render() {
 		const hoverLink = `.social-link h4:hover {
-			background: black;
+			boxShadow: '10px black',
 		}`
 		const styleSheet = document.styleSheets[0]
 		styleSheet.insertRule(hoverLink, styleSheet.cssRules.length);
