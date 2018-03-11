@@ -89,7 +89,7 @@ class SocialLinks extends React.Component {
 		}
 		return(
 			<div>
-				<h2>Social Links</h2>
+				<h2>Contact Me</h2>
 				<div style={socialLinksStyle}>{socialLinks}</div>
 			</div>
 			)
