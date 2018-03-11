@@ -4,6 +4,11 @@ import COLOR_ARRAY from '../utils/constants'
 
 class FloatingHexagon extends React.Component {
 
+	constructor() {
+		super()
+		this.state = { stylesheet: document.styleSheets[0] }
+	}
+
 	_getRandomInt(min, max) {
   	return parseFloat(Math.floor(Math.random() * Math.floor(max)) + min);
 	};
@@ -13,13 +18,12 @@ class FloatingHexagon extends React.Component {
 		return colors[this._getRandomInt(0, colors.length)];
 	};
 
-
 	render(){
 		const randomNumber = this._getRandomInt(10,50)/100
 		const randomColor = this._getRandomColor()
+		const styleSheet = this.state.stylesheet
 		const idName =  'animatedHex' + this.props.uniqId
 		const animationName = 'float-' + idName
-		const styleSheet = document.styleSheets[0]
 		const animationStyle = ['linear','ease-in', 'ease-out'][this._getRandomInt(0,2)]
 
 		const animation = {
@@ -45,6 +49,7 @@ class FloatingHexagon extends React.Component {
 				right: 0px;
 			} 
 		}`;
+		
 		styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
 
 		return(
