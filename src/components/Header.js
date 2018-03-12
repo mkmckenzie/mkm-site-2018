@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Hexagon from './hexagon'
-import { rhythm } from '../utils/typography'
 import COLOR_ARRAY from '../utils/constants'
+import mk from '../img/mkm-granada-2017.jpg'
 
 
 class Header extends React.Component {
@@ -17,12 +17,9 @@ class Header extends React.Component {
     }
 
     const titleBackgroundStyle = {
-      position: '-webkit-sticky',
-      position: 'sticky',
-      top: '10px',
       background: `linear-gradient(217deg, ${COLOR_ARRAY.middle}, ${COLOR_ARRAY.darker})`,
       margin: '0',
-      color: 'white',
+      color: 'rgba(0,0,0,0)',
       padding: '10px',
       textTransform: 'uppercase',
       display: 'flex',
@@ -30,16 +27,22 @@ class Header extends React.Component {
       justifyContent: 'center',
       textAlign: 'center',
       width: '100%',
-     
+      backgroundClip: 'text',
+      WebkitBackgroundClip: 'text',
+      position: 'relative',
+      bottom: '200px',
+      WebkitTextStroke: '2px white',
+      textStroke: '1px white',
     }
 
     return (
-      <div>
+      <div style={{maxHeight: '500px'}}>
         <div style={outerContainerStyle}>
           <div>
             <Hexagon
               sizeMultiplier='1'
               backgroundColor={MainDarkColor}
+              image={mk}
             />
           </div>
         </div>

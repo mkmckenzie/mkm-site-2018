@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+import Nav from '../components/nav'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -14,6 +15,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+    <Nav />
     <div
       style={{
         margin: '0 auto',

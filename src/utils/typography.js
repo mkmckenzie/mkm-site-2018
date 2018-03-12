@@ -9,6 +9,7 @@ const typography = new Typography({
 			name: 'Lato',
 			styles: [
 				'300',
+				'700',
 				'700i',
 			],
 		},
@@ -16,6 +17,7 @@ const typography = new Typography({
 			name: 'Montserrat',
 			styles: [
 				'700',
+				'900',
 			],
 		},
 	],
@@ -30,20 +32,41 @@ const typography = new Typography({
 		h1: {
 			textTransform: 'uppercase',
 			margin: '0',
-			fontSize: '2rem',
+			fontSize: '3rem',
 			letterSpacing: '.2rem',
+			fontWeight: '900',
 		},
 		h2: {
 			textTransform: 'uppercase',
 			marginTop: '0',
 			background: `linear-gradient(217deg, ${COLOR_ARRAY.middle}, ${COLOR_ARRAY.darker})`,
 			color: 'white',
-			textAlign: 'right',
-			paddingRight: '50px',
+			textAlign: 'left',
+			paddingLeft: '30px',
 			marginBottom: '30px',
 		},
 		h4: {
 			marginBottom: '10px',
+		},
+		'.nav-style a': {
+			color: 'white',
+			textDecoration: 'none',
+			paddingLeft: '10px',
+			paddingRight: '10px',
+			textTransform: 'uppercase', 
+			fontSize: '14px',
+		},
+		'.nav-style a:hover': {
+			color: COLOR_ARRAY.lighter,
+		},
+		'.resume-button': {
+			textAlign: 'center',
+			marginTop: '20px',
+		},
+		'.resume-button a': {
+			border: '6px solid ' + COLOR_ARRAY.darkest,
+			padding: '20px',
+			
 		}
 	}),
  });

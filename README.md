@@ -1,13 +1,9 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Hello!
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+You seem to have stumbled upon my README for my personal portfolio site. Awesome! Before you venture too far into the code, know this:
+1. Yes, I know it's pretty gross on the back end. ✨
+2. Please feel free to make a PR if you have feedback - I'm still learning a lot about React! 
+3. This site was built with GatsbyJS - a static site generator framework that I highly recommend.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Thanks for stopping by! 
+❤️ - MK

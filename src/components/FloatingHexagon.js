@@ -4,9 +4,27 @@ import COLOR_ARRAY from '../utils/constants'
 
 class FloatingHexagon extends React.Component {
 
-	constructor() {
-		super()
-		this.state = { stylesheet: document.styleSheets[0] }
+	constructor(props) {
+		super(props)
+		this.state = { stylesheet: '', idName: 'animatedHex' + props.uniqId, animationName: 'float-animatedHex' + props.uniqId }
+	}
+
+	componentDidMount() {
+		this.state.stylesheet = document.styleSheets[0]
+		const styleSheet = this.state.stylesheet
+		const keyframes = `@keyframes ${this.state.animationName} { 
+			0% {
+				bottom: -1000px;
+				right: ${this._getRandomInt(-500,500)}px;
+
+			}
+			100% {
+				bottom: ${this._getRandomInt(500,700)}px;
+				right: 0px;
+			} 
+		}`;
+		styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+
 	}
 
 	_getRandomInt(min, max) {
@@ -21,42 +39,26 @@ class FloatingHexagon extends React.Component {
 	render(){
 		const randomNumber = this._getRandomInt(10,50)/100
 		const randomColor = this._getRandomColor()
-		const styleSheet = this.state.stylesheet
-		const idName =  'animatedHex' + this.props.uniqId
-		const animationName = 'float-' + idName
 		const animationStyle = ['linear','ease-in', 'ease-out'][this._getRandomInt(0,2)]
-
 		const animation = {
 			position: 'relative',
 			margin: this._getRandomInt(-80,80) + 'px',
 			opacity: this._getRandomInt(30,60)/100,
-			animationName: animationName,
+			animationName: this.state.animationName,
 			animationDuration: this._getRandomInt(4,20) + 's',
 		  animationTimingunction: animationStyle,
 		  animationDelay: '0',
 		  animationIterationCount: 'infinite',
 		  animationPlayState: 'running',
 		}
-
-		const keyframes = `@keyframes ${animationName} { 
-			0% {
-				bottom: -1000px;
-				right: ${this._getRandomInt(-500,500)}px;
-
-			}
-			100% {
-				bottom: ${this._getRandomInt(500,700)}px;
-				right: 0px;
-			} 
-		}`;
 		
-		styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
 
 		return(
-			<div className='animatedHex' style={animation} id={idName}>
+			<div className='animatedHex' style={animation} id={this.state.idName}>
 				<Hexagon
 					sizeMultiplier={randomNumber}
 					backgroundColor={randomColor}
+					image=''
 					/>
 			</div>
 			)

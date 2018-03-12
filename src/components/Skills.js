@@ -29,17 +29,9 @@ class Skills extends React.Component {
 			marginRight: '-10px',
 		}
 
-		const titleStyle = {
-			margin: '0',
-			background: `linear-gradient(217deg, ${COLOR_ARRAY.middle}, ${COLOR_ARRAY.darker})`,
-			color: 'white',
-			textAlign: 'right',
-			paddingRight: '50px',
-			marginBottom: '10px',
-		}
 		return(
 			<div>
-				<h2 style={titleStyle}>{this.props.title}</h2>
+				<h2>{this.props.title}</h2>
 				<div style={skillStyle}>{skillSet}</div>
 			</div>
 			)

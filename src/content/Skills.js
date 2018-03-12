@@ -8,6 +8,7 @@ const SkillsContent	=	[
 											<li>My first love</li>
 											<li>Attended <a href="http://railsconf.org/">RailsConf</a> 2017</li>
 											<li>Learned primarily through self-directed online tutorials & mentorship</li>
+											<li>Created a Rails <a href="https://emkaydeum.wordpress.com/2016/04/28/tutorial-build-a-rails-app-using-the-nasa-astronomy-photo-of-the-day-api/">tutorial</a> for introducing the use of APIs with Rails for Women Who Code DC beginngers classes</li>
 										</ul>,
 										flex: '1',
 										key: 1, 
@@ -30,15 +31,15 @@ const SkillsContent	=	[
 										<ul>
 											<li>My current fancy</li>
 											<li>Used on some features at WeddingWire</li>
-											<li>First introduced to at <a href="http://rubyforgood.org/">Ruby for Good</a> 2017</li>
-											<li>This site is built with <a href="https://www.gatsbyjs.org/">Gatsby</a>, a static site generator for React</li>
+											<li>First introduced to React at <a href="http://rubyforgood.org/">Ruby for Good</a> 2017 while helping to rebuild <a href="https://github.com/OperationCode/operationcode_frontend">Operation Code</a></li>
+											<li>This site is built with <a href="https://www.gatsbyjs.org/">Gatsby</a>, a static site generator for React (and I highly recommend it)</li>
 										</ul>,
 										flex: '1',
 										key: 3,
 									},
 									{
-										skillName:'Other Skills',
-										skillDescription: <div style={{ textAlign: 'center' }}> HTML5/CSS3, Coffeescript, Sass, Elasticsearch, MySQL, Adobe Illustrator, Generally Being a Good Person </div>,
+										skillName:'Technical Skills',
+										skillDescription: <div style={{ textAlign: 'center', marginBottom: '10px', }}> HTML5/CSS3, Coffeescript, Sass, Elasticsearch, MySQL, Adobe Illustrator, Generally Being a Good Person </div>,
 										flex: '100%',
 										key: 4,
 									},
