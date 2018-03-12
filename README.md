@@ -6,4 +6,12 @@ You seem to have stumbled upon my README for my personal portfolio site. Awesome
 3. This site was built with GatsbyJS - a static site generator framework that I highly recommend.
 
 Thanks for stopping by! 
+
 ❤️ - MK
+
+## TODO & Future Improvements 
+- [ ] Add favicon
+- [ ] Add resume download link
+- [ ] Fix nav bar to be responsive (install bootstrap?)
+
+
