@@ -66,8 +66,10 @@ const typography = new Typography({
 		'.resume-button a': {
 			border: '6px solid ' + COLOR_ARRAY.darkest,
 			padding: '20px',
-			
-		}
+		},
+		'.hidden': {
+			visibility: 'hidden',
+		},
 	}),
  });
 

@@ -6,12 +6,14 @@ class FloatingHexagon extends React.Component {
 
 	constructor(props) {
 		super(props)
-		this.state = { stylesheet: '', idName: 'animatedHex' + props.uniqId, animationName: 'float-animatedHex' + props.uniqId }
+		this.state = { 
+			idName: 'animatedHex' + props.uniqId, 
+			animationName: 'float-animatedHex' + props.uniqId,
+			visibility: 'hidden', }
 	}
 
 	componentDidMount() {
-		this.state.stylesheet = document.styleSheets[0]
-		const styleSheet = this.state.stylesheet
+		const styleSheet = document.styleSheets[0]
 		const keyframes = `@keyframes ${this.state.animationName} { 
 			0% {
 				bottom: -1000px;
@@ -23,8 +25,8 @@ class FloatingHexagon extends React.Component {
 				right: 0px;
 			} 
 		}`;
-		styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
-
+		styleSheet.insertRule(keyframes, styleSheet.cssRules.length)
+		this.setState({visibility: ''})
 	}
 
 	_getRandomInt(min, max) {
@@ -51,10 +53,10 @@ class FloatingHexagon extends React.Component {
 		  animationIterationCount: 'infinite',
 		  animationPlayState: 'running',
 		}
-		
+
 
 		return(
-			<div className='animatedHex' style={animation} id={this.state.idName}>
+			<div className={`animatedHex ${this.state.visibility}`} style={animation} id={this.state.idName}>
 				<Hexagon
 					sizeMultiplier={randomNumber}
 					backgroundColor={randomColor}

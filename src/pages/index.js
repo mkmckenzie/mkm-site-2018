@@ -21,6 +21,7 @@ const floatingThingsContainerStyle = {
   zIndex: '-100',
   top: '0',
   left: '0',
+  alignItems: 'flex-end',
 };
 
 function _renderFloatingThings(number) {
