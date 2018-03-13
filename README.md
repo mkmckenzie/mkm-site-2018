@@ -10,7 +10,7 @@ Thanks for stopping by!
 ❤️ - MK
 
 ## TODO & Future Improvements 
-- [ ] Add favicon
+- [x] Add favicon
 - [ ] Add resume download link
 - [ ] Fix nav bar to be responsive (install bootstrap?)
 
