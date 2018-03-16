@@ -11,7 +11,7 @@ const Summary = () => (
 		<h2>Summary</h2>
 		<div>
 			<p style={bodyStyle}>
-				I am a self-taught, community-focused software engineer 
+				I am a self-taught, community-focused, full-stack software engineer 
 				who takes a people-driven approach to development. I am quick to learn,
 				methodical, and a stickler for the house style guide.
 			</p>

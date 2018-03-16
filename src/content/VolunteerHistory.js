@@ -23,6 +23,17 @@ const VolunteerHistoryContent = [
 					<li>Create tutorials, give tech talks, and organize weekly meetups for attendees</li>
 				</ul>,
 				order: 1
+			},
+			{
+				title: 'Member',
+				company: 'Global Shapers, D.C. Hub I',
+				dates: 'December 2016 - Present',
+				description: 
+				<ul>
+					<li>Work with the DC Global Shapers (an initiative of the World Economic Forum) 
+					on community outreach projects.</li>
+				</ul>,
+				order: 1
 			}
 		];
 
