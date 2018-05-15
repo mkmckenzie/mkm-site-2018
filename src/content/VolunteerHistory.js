@@ -33,7 +33,7 @@ const VolunteerHistoryContent = [
 					<li>Work with the DC Global Shapers (an initiative of the World Economic Forum) 
 					on community outreach projects.</li>
 				</ul>,
-				order: 1
+				order: 3
 			}
 		];
 

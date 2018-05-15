@@ -22,5 +22,4 @@ const Summary = () => (
 	</div>
 )
 
-
 export default Summary

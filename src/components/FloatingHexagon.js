@@ -26,7 +26,7 @@ class FloatingHexagon extends React.Component {
 			} 
 		}`;
 		styleSheet.insertRule(keyframes, styleSheet.cssRules.length)
-		this.setState({visibility: ''})
+		this.setState({ visibility: '' })
 	}
 
 	_getRandomInt(min, max) {
