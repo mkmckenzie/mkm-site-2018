@@ -6,14 +6,17 @@ class WorkHistory extends React.Component {
 
 	_getContent() {
 		const content = this.props.content
+		let i = 1
 		return content.map((job) => {
+			i += 1
 			return (
 				<JobDescription
 					title={job.title}
 					company={job.company}
 					dates={job.dates}
 					description={job.description}
-					key={job.order}
+					order={job.order}
+					key={i}
 				/>
 				);
 		});

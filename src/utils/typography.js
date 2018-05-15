@@ -64,8 +64,10 @@ const typography = new Typography({
 			marginTop: '20px',
 		},
 		'.resume-button a': {
-			border: '6px solid ' + COLOR_ARRAY.darkest,
+			backgroundColor: COLOR_ARRAY.darkest,
 			padding: '20px',
+			color: 'white',
+			textDecoration: 'none',
 		},
 		'.hidden': {
 			visibility: 'hidden',
