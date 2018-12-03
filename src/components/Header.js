@@ -9,6 +9,7 @@ class Header extends React.Component {
 
   render() {
     const MainDarkColor = COLOR_ARRAY.darkest;
+    const middleColor = COLOR_ARRAY.middle;
     const outerContainerStyle = { 
       padding: '50px',
       display: 'flex',
@@ -17,9 +18,8 @@ class Header extends React.Component {
     }
 
     const titleBackgroundStyle = {
-      background: `linear-gradient(217deg, ${COLOR_ARRAY.middle}, ${COLOR_ARRAY.darker})`,
       margin: '0',
-      color: 'rgba(0,0,0,0)',
+      color: 'rgba(255,255,255,0.8)',
       padding: '10px',
       textTransform: 'uppercase',
       display: 'flex',
@@ -27,12 +27,10 @@ class Header extends React.Component {
       justifyContent: 'center',
       textAlign: 'center',
       width: '100%',
-      backgroundClip: 'text',
-      WebkitBackgroundClip: 'text',
       position: 'relative',
       bottom: '200px',
-      WebkitTextStroke: '2px white',
-      textStroke: '1px white',
+      WebkitTextStroke: '1px ' + middleColor,
+      textStroke: '1px ' + middleColor,
     }
 
     return (
