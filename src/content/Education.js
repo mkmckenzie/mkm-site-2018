@@ -4,7 +4,7 @@ import React from 'react'
 const EducationContent = [
 	{
 		title: 'UNC-Chapel Hill',
-		company: 'Bachelor of Science, Environmental Science',
+		company: 'B.S. Environmental Science',
 		dates: 'Class of 2013',
 		description: 
 		<ul>
