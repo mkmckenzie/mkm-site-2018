@@ -45,7 +45,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div style={titleBackgroundStyle}>
-          <h1>Mary-Katherine McKenzie</h1>
+          <h1>MK McKenzie</h1>
         </div>
       </div>
     )

@@ -25,6 +25,18 @@ const OtherProjectsContent = [
 										flex: '1',
 										key: 2,
 									},
+									{
+										skillName: 'POODR Weekly Bookclub',
+										skillDescription: 
+										<ul>
+											<li>Fall 2015</li>
+											<li>Co-hosted a weekly bookclub with a handful of other folks all over the world</li>
+											<li>Assembled a few slide decks focusing on one chapter of Sandi Metz's Practical Object Oriented Design in Ruby</li>
+											<li><a href="https://www.youtube.com/playlist?list=PLtNihcG6aHOzjk9SEW6s6oxpxFvgSUfGB">YouTube Playlist</a></li>
+										</ul>,
+										flex: '1',
+										key: 3,
+									},
 								]
 
 export default OtherProjectsContent

@@ -39,7 +39,7 @@ const SkillsContent	=	[
 									},
 									{
 										skillName:'Technical Skills',
-										skillDescription: <div style={{ textAlign: 'center', marginBottom: '10px', }}> HTML5/CSS3, Coffeescript, Sass, Elasticsearch, MySQL, Adobe Illustrator, Generally Being a Good Person </div>,
+										skillDescription: <div style={{ textAlign: 'center', marginBottom: '10px', }}> HTML5/CSS3, PostgreSQL, Sass, Elasticsearch, MySQL, Adobe Illustrator, Generally Being a Good Person </div>,
 										flex: '100%',
 										key: 4,
 									},
