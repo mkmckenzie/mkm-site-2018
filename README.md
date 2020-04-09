@@ -21,6 +21,7 @@ Thanks for stopping by!
 
 1. `gatsby build` gets the code ready for production
 2. `surge` kicks off the publishing process
+3. Point it to the `/public` folder
 
 
 
