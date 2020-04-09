@@ -11,7 +11,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="MKM - Rails Developer"
       meta={[
-        { name: 'A portfolio and resume site for Rails developer Mary Katherine McKenzie', content: 'Resume' },
+        { name: 'A portfolio and resume site for Rails developer Mary Katherine (MK) McKenzie', content: 'Resume' },
         { name: 'resume, web developer, web dev, rails dev, ruby dev, ruby, rails, dev for hire, software engineer, full stack developer, full stack software engineer, full stack, san franscisco full stack developer, SF developer, california rails developers', content: 'resume, portfolio' },
       ]}
       link={[

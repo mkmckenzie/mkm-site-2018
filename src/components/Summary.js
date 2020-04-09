@@ -1,6 +1,5 @@
 import React from 'react'
 import COLOR_ARRAY from '../utils/constants'
-import resume from '../content/MaryKatherineMcKenzie-Resume2018-3.pdf'
 import sf from '../img/stitchfix-logo.png'
 
 const bodyStyle = {
@@ -20,7 +19,6 @@ const Summary = () => (
 			<p style={{ fontSize: '40px' }}> 👩🏼‍💻 <img src={sf} /> 📦</p>
 			<p>Now happily working for <a href="https://multithreaded.stitchfix.com/">Stitch Fix</a> in <strong>San Francisco</strong>.</p>
 		</div>
-		<div className='resume-button'><a href={resume}>Download My Resume</a></div>
 	</div>
 )
 

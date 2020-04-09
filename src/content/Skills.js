@@ -29,7 +29,7 @@ const SkillsContent	=	[
 										skillName:'React',
 										skillDescription: 
 										<ul>
-											<li>Written frequently at Stitch Fix for various front-end projects</li>
+											<li>Written frequently at Stitch Fix for various front-end projects (Consolidated Payment Form NPM package, Fix Inspiration Board's UI)</li>
 											<li>Used to build out vendor direct payment system at WeddingWire</li>
 											<li>First introduced to React at <a href="http://rubyforgood.org/">Ruby for Good</a> 2017 while helping to rebuild <a href="https://github.com/OperationCode/operationcode_frontend">Operation Code</a></li>
 											<li>This site is built with <a href="https://www.gatsbyjs.org/">Gatsby</a>, a static site generator for React 😻</li>
