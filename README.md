@@ -14,12 +14,12 @@ Thanks for stopping by!
 ### Notes for local development:
 
 1. `yarn install` to get the packages downloaded
-2. `gatsby develop` runs the local server
+2. `yarn develop` runs the local server
 
 
 ### Notes for pushing to production:
 
-1. `gatsby build` gets the code ready for production
+1. `yarn build` gets the code ready for production
 2. `surge` kicks off the publishing process
 3. Point it to the `/public` folder
 
