@@ -35,7 +35,7 @@ class Header extends React.Component {
 
     return (
       <div style={{maxHeight: '500px'}}>
-        <div style={outerContainerStyle}>
+        <div style={outerContainerStyle} aria-hidden="true">
           <div>
             <Hexagon
               sizeMultiplier='1'
@@ -45,7 +45,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div style={titleBackgroundStyle}>
-          <h1>MK McKenzie</h1>
+          <h1 title="aka Mary Katherine McKenzie">MK McKenzie</h1>
         </div>
       </div>
     )
