@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import Summary from '../components/Summary';
 import Skills from '../components/Skills';
 import WorkHistory from '../components/WorkHistory';

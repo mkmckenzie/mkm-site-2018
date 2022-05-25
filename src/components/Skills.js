@@ -1,12 +1,10 @@
 import React from 'react';
 import Skill from './Skill';
+import PropTypes from 'prop-types';
 
-
-class Skills extends React.Component {
-
-	_getSkills() {
-		const content = this.props.content;
-		return content.map((skill) => {
+function Skills({ content, title }) {
+	const skillSet = () => (
+		content.map(skill => {
 			return (
 				<Skill
 					skillName={skill.skillName}
@@ -15,27 +13,29 @@ class Skills extends React.Component {
 					key={skill.key}
 				/>
 			);
-		});
-	}
+		})
+	);
 
-	render(){
-		const skillSet = this._getSkills();
-		const skillStyle = {
-			display: 'flex',
-			flexWrap: 'wrap',
-			justifyContent: 'space-around',
-			marginLeft: '-10px',
-			marginRight: '-10px',
-		};
+	const skillStyle = {
+		display: 'flex',
+		flexWrap: 'wrap',
+		justifyContent: 'space-around',
+		marginLeft: '-10px',
+		marginRight: '-10px',
+	};
 
-		return(
-			<div>
-				<h2>{this.props.title}</h2>
-				<div style={skillStyle}>{skillSet}</div>
-			</div>
-		);
-	}
-
+	return(
+		<div>
+			<h2>{title}</h2>
+			<div style={skillStyle}>{skillSet()}</div>
+		</div>
+	);
 }
+
+Skills.propTypes = {
+	content: PropTypes.array,
+	title: PropTypes.string,
+};
+
 
 export default Skills;
