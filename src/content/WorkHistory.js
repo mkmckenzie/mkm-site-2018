@@ -31,7 +31,7 @@ const WorkHistoryContent = [
 		description: <ul>
 			<li>Stack: Rails, React, PostgreSQL</li>
 			<li>Projects: Consolidated Payment Form Experience, Structured Fix Request Redesign, Fix Inspiration Board, Direct Buy (Shop) features</li>
-			<li>Daily: Work cross-functionally to develop features for the user ("client") facing website, specifically regarding building client-stylist relationships for returning clients</li>
+			<li>Daily: Work cross-functionally to develop features for the user (&quot;Client&quot;) facing website, specifically regarding building client-stylist relationships for returning clients</li>
 		</ul>,
 		order: 3,
 	},
