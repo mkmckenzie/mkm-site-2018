@@ -4,7 +4,7 @@ const VolunteerHistoryContent = [
 			{
 				title: 'Organizer',
 				company: <span><a href="https://rubybythebay.org/">Ruby by the Bay</a> / Ruby for Good</span>,
-				dates: 'January 2020 - Present',
+				dates: 'January 2020 - April 2020',
 				description:
 				<ul>
 					<li>Assist with project selection</li>
