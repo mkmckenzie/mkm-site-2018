@@ -1,11 +1,10 @@
 import React from 'react';
 import JobDescription from './JobDescription';
+import PropTypes from 'prop-types';
 
+function WorkHistory({ content, title }) {
 
-class WorkHistory extends React.Component {
-
-	_getContent() {
-		const content = this.props.content;
+	const getContent = () => {
 		let i = 1;
 		return content.map((job) => {
 			i += 1;
@@ -20,18 +19,21 @@ class WorkHistory extends React.Component {
 				/>
 			);
 		});
-	}
+	};
 
-	render() {
-		const jobs = this._getContent();
-		const classNameFromTitle = this.props.title.replace(/\s/, '-');
-		return (
-			<div className={classNameFromTitle}>
-				<h2>{this.props.title}</h2>
-				<div className="jobs" style={{display:'flex', flexWrap: 'wrap'}}>{jobs}</div>
-			</div>
-		);
-	}
+	const jobs = getContent();
+	const classNameFromTitle = title.replace(/\s/, '-');
+	return (
+		<div className={classNameFromTitle}>
+			<h2>{title}</h2>
+			<div className="jobs" style={{display:'flex', flexWrap: 'wrap'}}>{jobs}</div>
+		</div>
+	);
 }
+
+WorkHistory.propTypes = {
+	content: PropTypes.array,
+	title: PropTypes.string, 
+};
 
 export default WorkHistory;
