@@ -1,6 +1,5 @@
 import React from 'react';
 import Skill from './Skill';
-import COLOR_ARRAY from '../utils/constants';
 
 
 class Skills extends React.Component {

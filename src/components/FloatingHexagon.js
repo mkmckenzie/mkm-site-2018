@@ -30,7 +30,7 @@ class FloatingHexagon extends React.Component {
 	}
 
 	_getRandomInt(min, max) {
-  	return parseFloat(Math.floor(Math.random() * Math.floor(max)) + min);
+		return parseFloat(Math.floor(Math.random() * Math.floor(max)) + min);
 	}
 
 	_getRandomColor() {
@@ -48,10 +48,10 @@ class FloatingHexagon extends React.Component {
 			opacity: this._getRandomInt(30,60)/100,
 			animationName: this.state.animationName,
 			animationDuration: this._getRandomInt(4,20) + 's',
-		  animationTimingunction: animationStyle,
-		  animationDelay: '0',
-		  animationIterationCount: 'infinite',
-		  animationPlayState: 'running',
+			animationTimingunction: animationStyle,
+			animationDelay: '0',
+			animationIterationCount: 'infinite',
+			animationPlayState: 'running',
 		};
 
 

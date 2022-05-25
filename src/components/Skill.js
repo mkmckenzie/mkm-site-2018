@@ -18,9 +18,9 @@ class Skill extends React.Component {
 		};
 
 		const titleStyle = {
-		 textTransform: 'uppercase', 
-		 textAlign: 'center', 
-		 margin: '14px',
+			textTransform: 'uppercase',
+			textAlign: 'center',
+			margin: '14px',
 		};
 
 		return(

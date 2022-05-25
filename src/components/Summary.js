@@ -1,5 +1,4 @@
 import React from 'react';
-import COLOR_ARRAY from '../utils/constants';
 import sf from '../img/stitchfix-logo.png';
 
 const bodyStyle = {

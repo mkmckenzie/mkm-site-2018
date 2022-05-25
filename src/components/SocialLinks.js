@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import Hexagon from './hexagon';
 import COLOR_ARRAY from '../utils/constants';
 import LinksContent from '../content/links';
 
