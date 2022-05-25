@@ -1,12 +1,12 @@
-import React from 'react'
-import Skill from './Skill'
-import COLOR_ARRAY from '../utils/constants'
+import React from 'react';
+import Skill from './Skill';
+import COLOR_ARRAY from '../utils/constants';
 
 
 class Skills extends React.Component {
 
 	_getSkills() {
-		const content = this.props.content
+		const content = this.props.content;
 		return content.map((skill) => {
 			return (
 				<Skill
@@ -17,7 +17,7 @@ class Skills extends React.Component {
 				/>
 			);
 		});
-	};
+	}
 
 	render(){
 		const skillSet = this._getSkills();
@@ -27,16 +27,16 @@ class Skills extends React.Component {
 			justifyContent: 'space-around',
 			marginLeft: '-10px',
 			marginRight: '-10px',
-		}
+		};
 
 		return(
 			<div>
 				<h2>{this.props.title}</h2>
 				<div style={skillStyle}>{skillSet}</div>
 			</div>
-			)
+		);
 	}
 
 }
 
-export default Skills
+export default Skills;

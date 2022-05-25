@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "eslint": "^8.16.0",
     "gatsby": "^1.9.215",
     "gatsby-cli": "^1.1.45",
     "gatsby-link": "^1.6.37",
@@ -21,9 +22,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint ./src/"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.30.0",
     "git-scripts": "^0.4.3",
     "prettier": "^1.10.2",
     "surge": "^0.23.0"

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 
 const EducationContent = [
@@ -14,8 +14,8 @@ const EducationContent = [
 		</ul>,
 		order: 1
 	},
-]
+];
 
 
 
-export default EducationContent
+export default EducationContent;

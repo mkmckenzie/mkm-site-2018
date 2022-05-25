@@ -1,5 +1,5 @@
-import React from 'react'
-import COLOR_ARRAY from '../utils/constants'
+import React from 'react';
+import COLOR_ARRAY from '../utils/constants';
 
 class Nav extends React.Component {
 	render() {
@@ -13,7 +13,7 @@ class Nav extends React.Component {
 			display: 'flex',
 			justifyContent: 'space-around',
 			flexWrap: 'wrap',
-		}
+		};
 
 		return(
 			<div className='nav-style' style={navStyle}>
@@ -26,8 +26,8 @@ class Nav extends React.Component {
 				<a href="#projects-presentations">Projects & Presentations</a>
 				<a href="#contact">Contact</a>
 			</div>
-			)
+		);
 	}
 }
 
-export default Nav
+export default Nav;

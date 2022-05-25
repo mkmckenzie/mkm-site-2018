@@ -1,11 +1,11 @@
-import React from 'react'
-import COLOR_ARRAY from '../utils/constants'
-import sf from '../img/stitchfix-logo.png'
+import React from 'react';
+import COLOR_ARRAY from '../utils/constants';
+import sf from '../img/stitchfix-logo.png';
 
 const bodyStyle = {
 	textAlign: 'center',
 	paddingBottom: '10px',
-}
+};
 
 const Summary = () => (
 	<div>
@@ -20,6 +20,6 @@ const Summary = () => (
 			<p>Now happily working for <a href="https://multithreaded.stitchfix.com/">Stitch Fix</a> in <strong>San Francisco</strong>.</p>
 		</div>
 	</div>
-)
+);
 
-export default Summary
+export default Summary;

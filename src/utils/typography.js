@@ -1,4 +1,4 @@
-import Typography from "typography";
+import Typography from 'typography';
 import COLOR_ARRAY from '../utils/constants';
 
 
@@ -73,6 +73,6 @@ const typography = new Typography({
 			visibility: 'hidden',
 		},
 	}),
- });
+});
 
 export default typography;

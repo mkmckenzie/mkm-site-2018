@@ -1,27 +1,27 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Hexagon from './hexagon'
-import COLOR_ARRAY from '../utils/constants'
-import LinksContent from '../content/links'
+import React from 'react';
+import Link from 'gatsby-link';
+import Hexagon from './hexagon';
+import COLOR_ARRAY from '../utils/constants';
+import LinksContent from '../content/links';
 
 class SocialLinks extends React.Component {
 
 	constructor() {
-		super()
-		this.state = { colorArray: Object.values(COLOR_ARRAY) }
-	};
+		super();
+		this.state = { colorArray: Object.values(COLOR_ARRAY) };
+	}
 
 	_getAllLinks() {
-		const links = LinksContent
+		const links = LinksContent;
 		return links.map((link) => {
 			const titleStyle = {
 				marginBottom: '0',
 				color: 'white',
-				}
+			};
 
 			const linkStyle = {
 				textDecoration: 'none', 
-			}
+			};
 
 			const containerStyle = {
 				textAlign: 'center',
@@ -29,13 +29,13 @@ class SocialLinks extends React.Component {
 				padding: '10px',
 				margin: '10px',
 				order: link.order,
-			}
+			};
 
 			const subtitleStyle = {
 				margin: '0',
 				fontSize: '14px',
 				color: 'white',
-			}
+			};
 
 
 			return (
@@ -54,14 +54,14 @@ class SocialLinks extends React.Component {
 			flexWrap: 'wrap',
 			justifyContent: 'space-around'
 
-		}
+		};
 		return(
 			<div>
 				<h2>Contact Me</h2>
 				<div style={socialLinksStyle}>{socialLinks}</div>
 			</div>
-			)
+		);
 	}
 }
 
-export default SocialLinks
+export default SocialLinks;
