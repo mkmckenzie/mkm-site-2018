@@ -35,19 +35,20 @@ const containerStyle = {
 	paddingTop: '50px',
 };
 
-
-const IndexPage = () => (
-	<div>
-  	<div style={floatingThingsContainerStyle}>{_renderFloatingThings(1000)}</div>
-		<div id="summary" style={containerStyle}><Summary  /></div>
-		<div id="skills" style={containerStyle}><Skills content={SkillContent} title="Skills" /></div>
-  	<div id="work-history" style={containerStyle}><WorkHistory content={WorkHistoryContent} title="Work History"/></div>
-  	<div id="community-leadership" style={containerStyle}><WorkHistory content={VolunteerHistoryContent} title="Community Leadership" /></div>
-		<div id="education" style={containerStyle}><WorkHistory content={EducationContent} title="Education" /></div>
-		<div id="media-mentions" style={containerStyle}><Skills content={MediaContent} title="Media Mentions"/></div>
-		<div id="projects-presentations" style={containerStyle}><Skills content={OtherProjectsContent} title="Projects & Presentations"/></div>
-  	<div id="contact" style={containerStyle}><SocialLinks /></div>
-	</div>
-);
+function IndexPage() {
+	return (
+		<div>
+			<div style={floatingThingsContainerStyle}>{_renderFloatingThings(1000)}</div>
+			<div id="summary" style={containerStyle}><Summary  /></div>
+			<div id="skills" style={containerStyle}><Skills content={SkillContent} title="Skills" /></div>
+			<div id="work-history" style={containerStyle}><WorkHistory content={WorkHistoryContent} title="Work History"/></div>
+			<div id="community-leadership" style={containerStyle}><WorkHistory content={VolunteerHistoryContent} title="Community Leadership" /></div>
+			<div id="education" style={containerStyle}><WorkHistory content={EducationContent} title="Education" /></div>
+			<div id="media-mentions" style={containerStyle}><Skills content={MediaContent} title="Media Mentions"/></div>
+			<div id="projects-presentations" style={containerStyle}><Skills content={OtherProjectsContent} title="Projects & Presentations"/></div>
+			<div id="contact" style={containerStyle}><SocialLinks /></div>
+		</div>
+	);
+}
 
 export default IndexPage;
