@@ -6,8 +6,8 @@
 const GREEN_SHEEN = '#7eb69f'
 const GRAY_ASAPARAGUS = '#3C543F'
 const ONYX = '#303B41'
-const DARK_KHAKI = '#D1B973'
-const CORNSILK = '#FFF9D9'
+const DEEP_SAFFRON = '#F9A03F'
+const MAX_YELLOW_RED = '#FFCB77'
 
 const ALMOND = '#EFD9CE'
 const SOAP = '#DEC0F1'
@@ -25,10 +25,10 @@ const NATURE_COLORS = {
   middle: GREEN_SHEEN,
   darker: GRAY_ASAPARAGUS,
   darkest: ONYX,
-  lighter: DARK_KHAKI,
-  lightest: CORNSILK,
+  lighter: DEEP_SAFFRON,
+  lightest: MAX_YELLOW_RED,
 }
-// https://coolors.co/7eb69f-3c543f-303b41-d1b973-fff9d9
+// https://coolors.co/303b41-3c543f-7eb69f-ffcb77-f9a03f
 
 const PURPLE_COLORS = {
   lightest: ALMOND,

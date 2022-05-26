@@ -4,7 +4,7 @@ import COLOR_ARRAY from '../utils/constants'
 import mk from '../img/mkm-granada-2017.jpg'
 
 function Header() {
-  const MainDarkColor = COLOR_ARRAY.darkest
+  const mainDarkColor = COLOR_ARRAY.darkest
   const outerContainerStyle = {
     padding: '50px',
     display: 'flex',
@@ -14,7 +14,7 @@ function Header() {
 
   const titleBackgroundStyle = {
     margin: '0',
-    color: MainDarkColor,
+    color: COLOR_ARRAY.middle,
     padding: '10px',
     textTransform: 'uppercase',
     display: 'flex',
@@ -32,7 +32,7 @@ function Header() {
         <div>
           <Hexagon
             sizeMultiplier={1}
-            backgroundColor={MainDarkColor}
+            backgroundColor={mainDarkColor}
             image={mk}
           />
         </div>
