@@ -77,7 +77,8 @@ const SkillsContent = [
       <ul>
         <li>
           Written frequently at Stitch Fix for various front-end projects
-          (Consolidated Payment Form NPM package, Fix Inspiration Board's UI)
+          (Consolidated Payment Form NPM package, Fix Inspiration Board's UI,
+           logged-out Product Details Page, internal design system components)
         </li>
         <li>Used to build out vendor direct payment system at WeddingWire</li>
         <li>
