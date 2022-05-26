@@ -5,7 +5,6 @@ import mk from '../img/mkm-granada-2017.jpg'
 
 function Header() {
   const MainDarkColor = COLOR_ARRAY.darkest
-  const middleColor = COLOR_ARRAY.middle
   const outerContainerStyle = {
     padding: '50px',
     display: 'flex',
@@ -15,7 +14,7 @@ function Header() {
 
   const titleBackgroundStyle = {
     margin: '0',
-    color: 'rgba(255,255,255,0.8)',
+    color: MainDarkColor,
     padding: '10px',
     textTransform: 'uppercase',
     display: 'flex',
@@ -25,8 +24,6 @@ function Header() {
     width: '100%',
     position: 'relative',
     bottom: '200px',
-    WebkitTextStroke: '1px ' + middleColor,
-    textStroke: '1px ' + middleColor,
   }
 
   return (

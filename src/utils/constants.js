@@ -48,6 +48,6 @@ const MILLENIAL_COLORS = {
 }
 // https://coolors.co/f4ead4-ffdac6-8e8b79-636357-6b322e
 
-const COLOR_ARRAY = PURPLE_COLORS
+const COLOR_ARRAY = NATURE_COLORS
 
 export default COLOR_ARRAY

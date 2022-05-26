@@ -22,7 +22,7 @@ function JobDescription({ order, title, company, dates, description }) {
 JobDescription.propTypes = {
   order: PropTypes.number,
   title: PropTypes.string,
-  company: PropTypes.object,
+  company: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   dates: PropTypes.string,
   description: PropTypes.object,
 }

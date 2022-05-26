@@ -35,7 +35,7 @@ function Skill({ flex, skillName, skillDescription }) {
 Skill.propTypes = {
   flex: PropTypes.string,
   skillName: PropTypes.string,
-  skillDescription: PropTypes.string,
+  skillDescription: PropTypes.object,
 }
 
 export default Skill

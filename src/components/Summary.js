@@ -21,7 +21,7 @@ function Summary() {
           👩🏼‍💻 <img src={sf} /> 📦
         </p>
         <p>
-          Now happily working for{' '}
+          Currently working for{' '}
           <a href="https://multithreaded.stitchfix.com/">Stitch Fix</a> in{' '}
           <strong>San Francisco</strong>.
         </p>
