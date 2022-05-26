@@ -9,7 +9,7 @@ import favicon from '../img/favicon.ico'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="MKM - Rails Developer"
+      title="MKM - Software Engineer"
       meta={[
         {
           name: 'A portfolio and resume site for Rails developer Mary Katherine (MK) McKenzie',
@@ -32,7 +32,7 @@ const TemplateWrapper = ({ children }) => (
         paddingTop: 0,
       }}
     >
-      {children()}
+      {children}
     </div>
   </div>
 )

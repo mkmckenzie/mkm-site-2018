@@ -10,6 +10,7 @@ import WorkHistoryContent from '../content/workhistory'
 import VolunteerHistoryContent from '../content/volunteerhistory'
 import EducationContent from '../content/education'
 import OtherProjectsContent from '../content/otherprojects'
+import TemplateWrapper from '../layouts'
 
 const floatingThingsContainerStyle = {
   height: '500px',
@@ -37,7 +38,7 @@ const containerStyle = {
 
 function IndexPage() {
   return (
-    <div>
+    <TemplateWrapper>
       <div style={floatingThingsContainerStyle}>
         {_renderFloatingThings(1000)}
       </div>
@@ -71,7 +72,7 @@ function IndexPage() {
       <div id="contact" style={containerStyle}>
         <SocialLinks />
       </div>
-    </div>
+    </TemplateWrapper>
   )
 }
 

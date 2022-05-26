@@ -12,9 +12,9 @@ function Summary() {
       <h2>Summary</h2>
       <div style={bodyStyle}>
         <p>
-          I am a self-taught, community-focused, full-stack software engineer who
-          takes a people-driven approach to development. I am quick to learn,
-          methodical, and a stickler for the house style guide.
+          I am a self-taught, community-focused, full-stack software engineer
+          who takes a people-driven approach to development. I am quick to
+          learn, methodical, and a stickler for the house style guide.
         </p>
         <p style={{ fontSize: '40px' }}>
           {' '}
