@@ -30,7 +30,7 @@ function Hexagon({ sizeMultiplier, backgroundColor, image }) {
   }
 
   const renderHexWithImg = (
-    <div className="wholeHexagon">
+    <div className="wholeHexagon" aria-hidden='true'>
       <svg
         className="clip-svg"
         style={clipSvgStyle}
@@ -60,7 +60,7 @@ function Hexagon({ sizeMultiplier, backgroundColor, image }) {
   )
 
   const renderHexWithBackground = (
-    <div className="wholeHexagon">
+    <div className="wholeHexagon" aria-hidden='true'>
       <svg
         style={svgStyle}
         xmlns="http://www.w3.org/2000/svg"
